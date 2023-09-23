@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
+import Friend from "../Friend/Friend";
 const Cousine = ({ name }) => {
   return (
     <div>
-      <h2 className="text-4xl">Cousine</h2>
-      <p>{name}</p>
+      <h2 className="text-xl">Cousine</h2>
+      <p className="text-4xl">{name}</p>
+
+      {name === "Hasan" && <Friend></Friend>}
     </div>
   );
 };
